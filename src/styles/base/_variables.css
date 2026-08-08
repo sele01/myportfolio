@@ -1,0 +1,47 @@
+:root {
+  /* Colors */
+  --color-bg: #0a0a0a;
+  --color-text: #ffffff;
+  --color-primary: #3b82f6;
+  --color-secondary: #10b981;
+  --color-accent: #8b5cf6;
+  --color-surface: #1a1a1a;
+  --color-border: #2a2a2a;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+
+  /* Container */
+  --container-max: 1200px;
+}:root {
+  /* Colors */
+  --color-bg: #0a0a0a;
+  --color-text: #ffffff;
+  --color-primary: #3b82f6;
+  --color-secondary: #10b981;
+  --color-accent: #8b5cf6;
+  --color-surface: #1a1a1a;
+  --color-border: #2a2a2a;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+
+  /* Container */
+  --container-max: 1200px;
+}
