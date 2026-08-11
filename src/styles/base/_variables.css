@@ -45,3 +45,18 @@
   /* Container */
   --container-max: 1200px;
 }
+
+/* ============================================
+   LIGHT THEME OVERRIDES
+   Applied when <body class="light-mode">
+   These override the :root variables above
+   ============================================ */
+body.light-mode {
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+  --color-primary: #2563eb;
+  --color-secondary: #059669;
+  --color-accent: #7c3aed;
+  --color-surface: #f3f4f6;
+  --color-border: #e5e7eb;
+}

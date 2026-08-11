@@ -1,4 +1,5 @@
 import { initTypewriter } from "./modules/typewriter.js";
+import { initTheme } from "./modules/theme.js";
 
 // Navigation toggle
 const navToggle = document.querySelector(".nav-toggle");
@@ -43,3 +44,6 @@ window.addEventListener("scroll", () => {
 
 // Initialize typewriter effect
 initTypewriter();
+
+// Initialize theme toggle
+initTheme();
