@@ -1,44 +1,136 @@
+/* ============================================
+   HERO SECTION
+   Full viewport height, vertically centered
+   padding-top accounts for fixed header
+   ============================================ */
 .hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
   padding-top: 70px;
+  /* Prevents content from being visible before animation starts */
+  overflow: hidden;
 }
 
+/* ============================================
+   HERO TEXT ELEMENTS
+   Each element starts invisible and animates in
+   ============================================ */
+
+/* Small greeting text "Hi, my name is" */
 .hero__greeting {
   font-size: 1rem;
   color: var(--color-primary);
   margin-bottom: var(--spacing-xs);
   font-family: var(--font-mono);
+
+  /* Animation properties */
+  opacity: 0;                              /* Start invisible */
+  animation: fadeInUp 0.6s ease 0.2s forwards; /* After 0.2s, fade in over 0.6s */
 }
 
+/* Large name */
 .hero__name {
   font-size: clamp(2.5rem, 8vw, 4.5rem);
   font-weight: 800;
   line-height: 1.1;
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-sm);
+
+  opacity: 0;
+  animation: fadeInUp 0.6s ease 0.4s forwards;
 }
 
-.hero__title {
+/* Tagline wrapper - contains static text + dynamic text + cursor */
+.hero__tagline-wrapper {
   font-size: clamp(1.5rem, 5vw, 2.5rem);
   font-weight: 600;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: var(--spacing-md);
+
+  opacity: 0;
+  animation: fadeInUp 0.6s ease 0.6s forwards;
 }
 
+/* The static "I build" text */
+.hero__tagline-static {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* The dynamic word that types out */
+.hero__tagline-dynamic {
+  color: var(--color-primary);
+}
+
+/* Blinking cursor after the dynamic text */
+.hero__cursor {
+  color: var(--color-primary);
+  font-weight: 300;
+
+  /* Blink animation: visible for 0.7s, hidden for 0.7s, infinite loop */
+  animation: blink 0.7s step-end infinite;
+}
+
+/* Description paragraph */
 .hero__description {
   max-width: 600px;
   font-size: 1.1rem;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: var(--spacing-md);
+
+  opacity: 0;
+  animation: fadeInUp 0.6s ease 0.8s forwards;
 }
 
+/* CTA buttons container */
 .hero__cta {
   display: flex;
   gap: var(--spacing-sm);
+
+  opacity: 0;
+  animation: fadeInUp 0.6s ease 1s forwards;
 }
 
+/* ============================================
+   KEYFRAME ANIMATIONS
+   Defined once, reused by multiple elements
+   ============================================ */
+
+/*
+  fadeInUp:
+  Elements start 30px below their position and invisible.
+  They slide up and fade in simultaneously.
+  "forwards" keeps them at the final state after animation ends.
+*/
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*
+  blink:
+  The cursor character appears and disappears.
+  step-end makes it snap between visible/hidden (no smooth fade).
+  This creates a sharp, terminal-like blinking cursor.
+*/
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
 @media (max-width: 768px) {
   .hero__cta {
     flex-direction: column;
