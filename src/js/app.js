@@ -1,5 +1,6 @@
 import { initTypewriter } from "./modules/typewriter.js";
 import { initTheme } from "./modules/theme.js";
+import { initProjects } from "./modules/projects.js";
 
 // Navigation toggle
 const navToggle = document.querySelector(".nav-toggle");
@@ -47,3 +48,6 @@ initTypewriter();
 
 // Initialize theme toggle
 initTheme();
+
+// Initialize projects section
+initProjects();

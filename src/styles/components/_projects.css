@@ -1,3 +1,8 @@
+/* ============================================
+   PROJECTS SECTION
+   ============================================ */
+
+/* Filter buttons container */
 .projects__filters {
   display: flex;
   gap: var(--spacing-xs);
@@ -5,6 +10,7 @@
   flex-wrap: wrap;
 }
 
+/* Individual filter button */
 .projects__filter {
   padding: 0.5rem 1rem;
   background: var(--color-surface);
@@ -14,16 +20,133 @@
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 0.85rem;
+  font-family: inherit;
 }
 
+/* Hover and active states */
 .projects__filter:hover,
 .projects__filter--active {
   background: var(--color-primary);
   border-color: var(--color-primary);
+  color: #ffffff;
 }
 
+/* Grid layout for project cards */
 .projects__grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: var(--spacing-md);
+}
+
+/* ============================================
+   PROJECT CARD
+   ============================================ */
+.project-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: var(--spacing-md);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+/* Card hover effect — lifts card slightly and highlights border */
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-primary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Card header — contains title and badge */
+.project-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-xs);
+}
+
+/* Project title */
+.project-card__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+/* Status badges */
+.project-card__badge {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Yellow badge for upcoming projects */
+.project-card__badge--upcoming {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+/* Blue badge for projects in development */
+.project-card__badge--development {
+  background: rgba(59, 130, 246, 0.15);
+  color: #3b82f6;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+/* Project description */
+.project-card__description {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* Light mode description color */
+body.light-mode .project-card__description {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* Tech tags container */
+.project-card__tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+/* Individual tech tag */
+.project-card__tech {
+  padding: 0.25rem 0.6rem;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: var(--color-primary);
+  font-family: var(--font-mono);
+}
+
+/* Card footer */
+.project-card__footer {
+  margin-top: auto;
+}
+
+/* GitHub link */
+.project-card__link {
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+.project-card__link:hover {
+  opacity: 0.7;
+}
+
+/* Disabled link for private projects */
+.project-card__link--disabled {
+  color: rgba(255, 255, 255, 0.3);
+  cursor: not-allowed;
 }
