@@ -99,15 +99,11 @@
 
 /* Project description */
 .project-card__description {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color-text);
+  opacity: 0.7;
   font-size: 0.9rem;
   line-height: 1.6;
   flex-grow: 1;
-}
-
-/* Light mode description color */
-body.light-mode .project-card__description {
-  color: rgba(0, 0, 0, 0.7);
 }
 
 /* Tech tags container */
@@ -147,6 +143,7 @@ body.light-mode .project-card__description {
 
 /* Disabled link for private projects */
 .project-card__link--disabled {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--color-text);
+  opacity: 0.3;
   cursor: not-allowed;
 }

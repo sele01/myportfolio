@@ -8,13 +8,11 @@
   display: flex;
   align-items: center;
   padding-top: 70px;
-  /* Prevents content from being visible before animation starts */
   overflow: hidden;
 }
 
 /* ============================================
    HERO TEXT ELEMENTS
-   Each element starts invisible and animates in
    ============================================ */
 
 /* Small greeting text "Hi, my name is" */
@@ -24,9 +22,8 @@
   margin-bottom: var(--spacing-xs);
   font-family: var(--font-mono);
 
-  /* Animation properties */
-  opacity: 0;                              /* Start invisible */
-  animation: fadeInUp 0.6s ease 0.2s forwards; /* After 0.2s, fade in over 0.6s */
+  opacity: 0;
+  animation: fadeInUp 0.6s ease 0.2s forwards;
 }
 
 /* Large name */
@@ -40,33 +37,31 @@
   animation: fadeInUp 0.6s ease 0.4s forwards;
 }
 
-/* Tagline wrapper - contains static text + dynamic text + cursor */
+/* Tagline wrapper - animation controls opacity */
 .hero__tagline-wrapper {
   font-size: clamp(1.5rem, 5vw, 2.5rem);
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.6);
   margin-bottom: var(--spacing-md);
 
   opacity: 0;
   animation: fadeInUp 0.6s ease 0.6s forwards;
 }
 
-/* The static "I build" text */
+/* Static "I am" text — transparency here, not on wrapper */
 .hero__tagline-static {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-text);
+  opacity: 0.6;
 }
 
-/* The dynamic word that types out */
+/* Dynamic typewriter text */
 .hero__tagline-dynamic {
   color: var(--color-primary);
 }
 
-/* Blinking cursor after the dynamic text */
+/* Blinking cursor */
 .hero__cursor {
   color: var(--color-primary);
   font-weight: 300;
-
-  /* Blink animation: visible for 0.7s, hidden for 0.7s, infinite loop */
   animation: blink 0.7s step-end infinite;
 }
 
@@ -75,12 +70,15 @@
   max-width: 600px;
   font-size: 1.1rem;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color-text);
   margin-bottom: var(--spacing-md);
 
   opacity: 0;
   animation: fadeInUp 0.6s ease 0.8s forwards;
 }
+
+/* Description text transparency — wrap in span if needed */
+/* For now, description is full opacity after animation */
 
 /* CTA buttons container */
 .hero__cta {
@@ -93,15 +91,7 @@
 
 /* ============================================
    KEYFRAME ANIMATIONS
-   Defined once, reused by multiple elements
    ============================================ */
-
-/*
-  fadeInUp:
-  Elements start 30px below their position and invisible.
-  They slide up and fade in simultaneously.
-  "forwards" keeps them at the final state after animation ends.
-*/
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -113,12 +103,6 @@
   }
 }
 
-/*
-  blink:
-  The cursor character appears and disappears.
-  step-end makes it snap between visible/hidden (no smooth fade).
-  This creates a sharp, terminal-like blinking cursor.
-*/
 @keyframes blink {
   0%, 100% {
     opacity: 1;

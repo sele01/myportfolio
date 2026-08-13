@@ -3,8 +3,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(10, 10, 10, 0.9);
-  backdrop-filter: blur(10px);
+  background: var(--color-bg);
+  opacity: 0.9;
+  -webkit-backdrop-filter: blur(10px);  /* Safari iOS */
+  backdrop-filter: blur(10px);  
   z-index: 1000;
   border-bottom: 1px solid var(--color-border);
 }
@@ -31,6 +33,7 @@
 .nav__link {
   font-size: 0.9rem;
   font-weight: 500;
+  color: var(--color-text);
   transition: color 0.3s ease;
   padding: 0.5rem 0;
   position: relative;

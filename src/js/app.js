@@ -1,6 +1,10 @@
 import { initTypewriter } from "./modules/typewriter.js";
 import { initTheme } from "./modules/theme.js";
 import { initProjects } from "./modules/projects.js";
+import { initSkills } from "./modules/skills.js";
+
+
+
 
 // Navigation toggle
 const navToggle = document.querySelector(".nav-toggle");
@@ -51,3 +55,6 @@ initTheme();
 
 // Initialize projects section
 initProjects();
+
+// Initialize skills section
+initSkills();

@@ -1,9 +1,15 @@
+/* ============================================
+   SKILLS SECTION
+   ============================================ */
+
+/* Grid layout — 4 columns on desktop, 2 on tablet, 1 on mobile */
 .skills__grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: var(--spacing-md);
 }
 
+/* Individual category card */
 .skills__category {
   background: var(--color-surface);
   padding: var(--spacing-md);
@@ -11,23 +17,78 @@
   border: 1px solid var(--color-border);
 }
 
+/* Category title (Frontend, Backend, etc.) */
 .skills__category-title {
   font-size: 1.1rem;
   color: var(--color-primary);
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  font-weight: 700;
 }
 
+/* Skills list container */
 .skills__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+/* ============================================
+   INDIVIDUAL SKILL ITEM
+   ============================================ */
+.skills-item {
+  display: flex;
+  flex-direction: column;
   gap: var(--spacing-xs);
 }
 
-.skills__item {
-  padding: 0.4rem 0.8rem;
-  background: rgba(59, 130, 246, 0.1);
-  border: 1px solid rgba(59, 130, 246, 0.2);
-  border-radius: 4px;
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.8);
+/* Header row: name + badge + percentage */
+.skills-item__header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+/* Skill name */
+.skills-item__name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+/* "Learning" badge — amber works on both themes, keep as is */
+.skills-item__badge {
+  font-size: 0.65rem;
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  font-weight: 600;
+}
+
+/* Percentage number — fixed to use theme variable */
+.skills-item__level {
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: var(--color-text);
+  opacity: 0.5;
+  font-family: var(--font-mono);
+}
+
+/* Progress bar track */
+.skills-item__bar {
+  width: 100%;
+  height: 6px;
+  background: var(--color-border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+/* Progress bar fill — width set by JavaScript */
+.skills-item__bar-fill {
+  height: 100%;
+  width: 0; /* Starts at 0, animates to data-level */
+  background: var(--color-primary);
+  border-radius: 3px;
+  transition: width 1s ease;
 }
