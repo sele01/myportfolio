@@ -75,13 +75,13 @@ portfolio/
 
 ### Phase 0: Foundation Setup
 
-- [ ] Initialize Git repository
-- [ ] Create Vite vanilla project
-- [ ] Configure Vite for multi-page support
-- [ ] Set up CSS architecture (7-1 pattern adapted)
-- [ ] Configure ESLint + Prettier
-- [ ] Create `.gitignore`
-- [ ] First commit: "Project scaffold"
+- [X] Initialize Git repository
+- [X] Create Vite vanilla project
+- [X] Configure Vite for multi-page support
+- [X] Set up CSS architecture (7-1 pattern adapted)
+- [X] Configure ESLint + Prettier
+- [X] Create `.gitignore`
+- [X] First commit: "Project scaffold"
 
 **Tools:**
 ```bash
@@ -96,14 +96,14 @@ git commit -m "Initial project scaffold"
 ### Phase 1: Core Structure & Navigation
 **Goal:** Semantic HTML skeleton, responsive navigation, theme system foundation.
 
-- [ ] Build semantic HTML structure in `index.html`
-- [ ] Implement mobile-first responsive navigation
-- [ ] Create CSS custom properties system
-- [ ] Set up typography scale
-- [ ] Implement dark/light theme foundation
-- [ ] Add smooth scrolling
-- [ ] Test on mobile, tablet, desktop
-- [ ] **Commit:** `"Core structure and navigation"`
+- [X] Build semantic HTML structure in `index.html`
+- [X] Implement mobile-first responsive navigation
+- [X] Create CSS custom properties system
+- [X] Set up typography scale
+- [X] Implement dark/light theme foundation
+- [X] Add smooth scrolling
+- [X] Test on mobile, tablet, desktop
+- [X] **Commit:** `"Core structure and navigation"`
 
 **Sections to build:**
 - Header with navigation
@@ -120,26 +120,26 @@ git commit -m "Initial project scaffold"
 
 **Goal:** Compelling first impression that communicates your mission.
 
-- [ ] Design hero layout
-- [ ] Craft personal tagline incorporating your pillars
-- [ ] Add subtle entrance animations
-- [ ] Implement typewriter or text-reveal effect
-- [ ] Add CTA buttons (*View Projects* / *Contact*)
-- [ ] Optimize for all viewports
-- [ ] **Commit:** `"Hero section with branding"`
+- [X] Design hero layout
+- [X] Craft personal tagline incorporating your pillars
+- [X] Add subtle entrance animations
+- [X] Implement typewriter or text-reveal effect
+- [X] Add CTA buttons (*View Projects* / *Contact*)
+- [X] Optimize for all viewports
+- [X] **Commit:** `"Hero section with branding"`
 
 ---
 
 ### Phase 3: Projects Showcase
 **Goal:** Your work tells your story. Structure projects around your pillars.
 
-- [ ] Create project card component
-- [ ] Implement filtering system (*All* / *Education* / *Agriculture* / *Culture*)
-- [ ] Add project data structure
-- [ ] Build individual project pages (dynamic template)
+- [X] Create project card component
+- [X] Implement filtering system (*All* / *Education* / *Agriculture* / *Culture*)
+- [X] Add project data structure
+- [X] Build individual project pages (dynamic template)
   - Include: Problem statement, technical stack, your role, live demo link, GitHub repository link, lessons learned
-- [ ] Add hover effects and transitions
-- [ ] **Commit:** `"Projects showcase with filtering"`
+- [X] Add hover effects and transitions
+- [X] **Commit:** `"Projects showcase with filtering"`
 
 #### Project Categories Aligned with Pillars
 
@@ -154,35 +154,35 @@ git commit -m "Initial project scaffold"
 ### Phase 4: Skills & Technical Proficiency
 **Goal:** Demonstrate full-stack competency visually.
 
-- [ ] Design skills section layout
-- [ ] Categorize skills: *Frontend* / *Backend* / *DevOps* / *Tools*
-- [ ] Add progress indicators or visual representations
-- [ ] Include technologies you're currently learning
-- [ ] **Commit:** `"Skills section with categorized proficiency"`
+- [X] Design skills section layout
+- [X] Categorize skills: *Frontend* / *Backend* / *DevOps* / *Tools*
+- [X] Add progress indicators or visual representations
+- [X] Include technologies you're currently learning
+- [X] **Commit:** `"Skills section with categorized proficiency"`
 
 ---
 
 ### Phase 5: About & Story
 **Goal:** Human connection. Why you build what you build.
 
-- [ ] Write your developer story
-- [ ] Include your three pillars motivation
-- [ ] Add education background
-- [ ] Include vision for your startup
-- [ ] Add professional photo (optional)
-- [ ] **Commit:** `"About section with personal story"`
+- [X] Write your developer story
+- [X] Include your three pillars motivation
+- [X] Add education background
+- [X] Include vision for your startup
+- [X] Add professional photo (optional)
+- [X] **Commit:** `"About section with personal story"`
 
 ---
 
 ### Phase 6: Contact & Conversion
 **Goal:** Make it easy for employers and collaborators to reach you.
 
-- [ ] Build contact form with validation
-- [ ] Add form submission handling (Formspree or similar)
-- [ ] Include social links (GitHub, LinkedIn)
-- [ ] Add resume download button
-- [ ] Implement success/error states
-- [ ] **Commit:** `"Contact section with form validation"`
+- [X] Build contact form with validation
+- [X] Add form submission handling (Formspree or similar)
+- [X] Include social links (GitHub, LinkedIn)
+- [X] Add resume download button
+- [X] Implement success/error states
+- [X] **Commit:** `"Contact section with form validation"`
 
 ---
 
@@ -239,7 +239,10 @@ git commit -m "Initial project scaffold"
 - [ ] Set up database (PostgreSQL or MongoDB)
 - [ ] Deploy backend separately (Railway, Render, or VPS)
 - [ ] **Commit:** `"Backend integration"`
-
+- [ ] Email verification (DNS MX check, disposable email blocking)
+- [ ] Replace Formspree with custom backend
+- [ ] Rate limiting on contact form
+- [ ] Spam protection (honeypot field)
 ---
 
 ### Phase 11: Startup Foundation
@@ -271,13 +274,14 @@ git commit -m "Initial project scaffold"
 
 ## 🔧 Technical Decisions Log
 
-| Decision | Rationale | Date |
-| :--- | :--- | :--- |
-| **Vite over plain HTML** | Modern DX, HMR, easy scaling to frameworks | Start |
-| **Vanilla JS initially** | Master fundamentals, no framework dependency | Start |
-| **CSS custom properties** | Theme system, maintainable | Phase 1 |
-| **Mobile-first approach** | Responsive by design | Phase 1 |
-| **Semantic HTML** | Accessibility, SEO | Phase 1 |
+| Vite over plain HTML | Modern DX, HMR, easy scaling | 2026 |
+| Vanilla JS initially | Master fundamentals first | 2026 |
+| CSS custom properties | Maintainable theme system | 2026 |
+| Mobile-first approach | Responsive by design | 2026 |
+| Semantic HTML | Accessibility and SEO | 2026 |
+| Formspree for contact | Fast deployment, no backend needed yet | 2026 |
+| CSS variables for theming | Enables dark/light toggle with 6 lines | 2026 |
+| Data-driven rendering | Projects/skills stored in JS, rendered dynamically | 2026 |
 
 ---
 
@@ -308,7 +312,10 @@ This roadmap itself is designed as a learning resource. As you progress:
 ## 📝 Version History
 
 | Version | Date | Changes |
-| :--- | :--- | :--- |
-| **1.0** | Today | Initial roadmap created |
+|---------|------|---------|
+| 1.0 | 2026-08-08 | Initial roadmap created |
+| 1.1 | 2026-08-11 | Phases 0-2 complete. Theme toggle built. GitHub Pages deployment configured. |
+| 1.2 | 2026-08-13 | Phases 3-4 complete. Skills section with IntersectionObserver. Theme consistency fixes. |
+| 1.3 | 2026-08-16 | Phases 5-6 complete. About section with three pillars. Contact form with Formspree. |
 
 
