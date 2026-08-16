@@ -1,3 +1,7 @@
+/* ============================================
+   CONTACT SECTION
+   ============================================ */
+
 .contact__text {
   max-width: 500px;
   color: var(--color-text);
@@ -42,4 +46,55 @@
 .contact__textarea {
   resize: vertical;
   min-height: 120px;
+}
+
+/* Error state for invalid inputs */
+.contact__input--error {
+  border-color: #ef4444;
+}
+
+.contact__input--error:focus {
+  border-color: #ef4444;
+}
+
+/* Error message below fields */
+.contact__error {
+  display: none;
+  color: #ef4444;
+  font-size: 0.8rem;
+  margin-top: var(--spacing-xs);
+}
+
+/* Submit button */
+.contact__submit {
+  width: 100%;
+  margin-top: var(--spacing-xs);
+}
+
+.contact__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Status message after submission */
+.contact__status {
+  margin-top: var(--spacing-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.contact__status--success {
+  display: block;
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.contact__status--error {
+  display: block;
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.3);
 }

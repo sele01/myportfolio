@@ -2,6 +2,7 @@ import { initTypewriter } from "./modules/typewriter.js";
 import { initTheme } from "./modules/theme.js";
 import { initProjects } from "./modules/projects.js";
 import { initSkills } from "./modules/skills.js";
+import { initContact } from "./modules/contact.js";
 
 
 
@@ -58,3 +59,6 @@ initProjects();
 
 // Initialize skills section
 initSkills();
+
+// Initialize contact form
+initContact();
