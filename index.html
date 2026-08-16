@@ -9,8 +9,8 @@
       content="Full-stack developer building tech solutions for Education, Agriculture, and Culture. Open source contributor."
     />
     <link rel="icon" type="image/svg+xml" href="/myportfolio/favicon.svg" />
-    <script type="module" crossorigin src="/myportfolio/assets/index-_PlThXlP.js"></script>
-    <link rel="stylesheet" crossorigin href="/myportfolio/assets/index-BKjlvaN2.css">
+    <script type="module" crossorigin src="/myportfolio/assets/index-B3Jv_KkR.js"></script>
+    <link rel="stylesheet" crossorigin href="/myportfolio/assets/index-DZIQHj_g.css">
   </head>
   <body>
     <header class="header">
@@ -252,25 +252,56 @@
             I'm currently looking for opportunities. Whether you have a project,
             a question, or just want to say hi — I'll get back to you.
           </p>
-          <form class="contact__form" id="contact-form">
+
+          <form class="contact__form" id="contact-form" novalidate>
             <div class="contact__form-group">
               <label for="name" class="contact__label">Name</label>
-              <input type="text" id="name" class="contact__input" required />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="contact__input"
+                placeholder="Your name"
+                required
+              />
+              <span class="contact__error" id="name-error"></span>
             </div>
+
             <div class="contact__form-group">
               <label for="email" class="contact__label">Email</label>
-              <input type="email" id="email" class="contact__input" required />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="contact__input"
+                placeholder="Your email"
+                required
+              />
+              <span class="contact__error" id="email-error"></span>
             </div>
+
             <div class="contact__form-group">
               <label for="message" class="contact__label">Message</label>
               <textarea
                 id="message"
+                name="message"
                 class="contact__input contact__textarea"
                 rows="5"
+                placeholder="Tell me about your project or opportunity..."
                 required
               ></textarea>
+              <span class="contact__error" id="message-error"></span>
             </div>
-            <button type="submit" class="btn btn--primary">Send Message</button>
+
+            <button
+              type="submit"
+              class="btn btn--primary contact__submit"
+              id="contact-submit"
+            >
+              Send Message
+            </button>
+
+            <div class="contact__status" id="contact-status"></div>
           </form>
         </div>
       </section>
