@@ -189,14 +189,14 @@ git commit -m "Initial project scaffold"
 ### Phase 7: Advanced Interactions & Polish
 **Goal:** Delight users with thoughtful details.
 
-- [ ] Implement scroll-triggered animations
-- [ ] Add page transitions
-- [ ] Create custom cursor (optional)
-- [ ] Add loading states
-- [ ] Implement lazy loading for images
-- [ ] Add back-to-top button
-- [ ] Ensure all interactive elements are keyboard accessible
-- [ ] **Commit:** `"Advanced interactions and polish"`
+- [X] Implement scroll-triggered animations
+- [X] Add page transitions
+- [X] Create custom cursor (optional)
+- [X] Add loading states
+- [X] Implement lazy loading for images
+- [X] Add back-to-top button
+- [X] Ensure all interactive elements are keyboard accessible
+- [X] **Commit:** `"Advanced interactions and polish"`
 
 ---
 
@@ -317,5 +317,3 @@ This roadmap itself is designed as a learning resource. As you progress:
 | 1.1 | 2026-08-11 | Phases 0-2 complete. Theme toggle built. GitHub Pages deployment configured. |
 | 1.2 | 2026-08-13 | Phases 3-4 complete. Skills section with IntersectionObserver. Theme consistency fixes. |
 | 1.3 | 2026-08-16 | Phases 5-6 complete. About section with three pillars. Contact form with Formspree. |
-
-

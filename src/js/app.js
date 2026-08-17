@@ -3,7 +3,8 @@ import { initTheme } from "./modules/theme.js";
 import { initProjects } from "./modules/projects.js";
 import { initSkills } from "./modules/skills.js";
 import { initContact } from "./modules/contact.js";
-
+import { initReveal } from "./modules/reveal.js";
+import { initBackToTop } from "./modules/backToTop.js";
 
 
 
@@ -62,3 +63,9 @@ initSkills();
 
 // Initialize contact form
 initContact();
+
+// Initialize scroll reveal animations
+initReveal();
+
+// Initialize back to top button
+initBackToTop();
