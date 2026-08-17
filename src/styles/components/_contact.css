@@ -98,3 +98,12 @@
   color: #ef4444;
   border: 1px solid rgba(239, 68, 68, 0.3);
 }
+
+/* Resume download button */
+.contact__resume {
+  margin-top: var(--spacing-md);
+}
+
+.contact__resume .btn {
+  font-size: 0.85rem;
+}
