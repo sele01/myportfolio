@@ -5,7 +5,7 @@
 .contact__text {
   max-width: 500px;
   color: var(--color-text);
-  opacity: 0.7;
+  opacity: var(--text-opacity-medium);
   line-height: 1.7;
   margin-bottom: var(--spacing-md);
 }
@@ -23,7 +23,7 @@
   margin-bottom: var(--spacing-xs);
   font-size: 0.9rem;
   color: var(--color-text);
-  opacity: 0.8;
+  opacity: var(--text-opacity-high);
 }
 
 .contact__input {

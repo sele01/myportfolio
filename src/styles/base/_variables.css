@@ -44,6 +44,10 @@
 
   /* Container */
   --container-max: 1200px;
+    /* Text Opacity */
+  --text-opacity-high: 0.7;
+  --text-opacity-medium: 0.6;
+  --text-opacity-low: 0.5;
 }
 
 /* ============================================
@@ -59,4 +63,8 @@ body.light-mode {
   --color-accent: #7c3aed;
   --color-surface: #f3f4f6;
   --color-border: #e5e7eb;
+    /* Text Opacity */
+  --text-opacity-high: 0.85;
+  --text-opacity-medium: 0.75;
+  --text-opacity-low: 0.65;
 }

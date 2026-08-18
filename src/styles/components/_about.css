@@ -14,7 +14,7 @@
 /* Story paragraphs */
 .about__story {
   color: var(--color-text);
-  opacity: 0.75;
+  opacity: var(--text-opacity-medium);
   line-height: 1.8;
   margin-bottom: var(--spacing-sm);
   font-size: 1rem;
@@ -84,7 +84,7 @@
 .pillar-card__text {
   font-size: 0.9rem;
   color: var(--color-text);
-  opacity: 0.7;
+  opacity: var(--text-opacity-medium);
   line-height: 1.6;
 }
 
@@ -110,7 +110,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--color-text);
-  opacity: 0.5;
+  opacity: var(--text-opacity-low);
   font-weight: 600;
 }
 

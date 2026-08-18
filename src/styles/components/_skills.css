@@ -71,7 +71,7 @@
   margin-left: auto;
   font-size: 0.8rem;
   color: var(--color-text);
-  opacity: 0.5;
+  opacity: var(--text-opacity-low);
   font-family: var(--font-mono);
 }
 

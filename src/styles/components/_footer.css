@@ -11,7 +11,7 @@
 
 .footer__copy {
   color: var(--color-text);
-  opacity: 0.5;
+  opacity: var(--text-opacity-low);
   font-size: 0.85rem;
 }
 
@@ -22,7 +22,7 @@
 
 .footer__social-link {
   color: var(--color-text);
-  opacity: 0.5;
+  opacity: var(--text-opacity-low);
   transition: color 0.3s ease, opacity 0.3s ease;
 }
 
