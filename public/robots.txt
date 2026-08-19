@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sele01.github.io/myportfolio/sitemap.xml
