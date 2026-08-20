@@ -203,73 +203,149 @@ git commit -m "Initial project scaffold"
 ### Phase 8: Accessibility & Performance
 **Goal:** Professional-grade, inclusive, fast.
 
-- [X] ] Audit with Lighthouse (target 95+)
-- [X] ] Add ARIA labels throughout
-- [X] ] Ensure color contrast meets WCAG AA
-- [X] ] Add skip navigation link
-- [X] ] Optimize images (WebP format)
-- [X] ] Implement resource hints (preload, prefetch)
-- [X] ] Test with screen reader
-- [X] ] **Commit:** `"Accessibility and performance optimization"`
+- [X] Audit with Lighthouse (target 95+)
+- [X] Add ARIA labels throughout
+- [X] Ensure color contrast meets WCAG AA
+- [X] Add skip navigation link
+- [X] Optimize images (WebP format)
+- [X] Implement resource hints (preload, prefetch)
+- [X] Test with screen reader
+- [X] **Commit:** `"Accessibility and performance optimization"`
 
 ---
 
 ### Phase 9: Deployment
 **Goal:** Live on the internet.
 
-- [ ] Create production build
-- [ ] Deploy to Netlify or Vercel
-- [ ] Configure custom domain (if available)
-- [ ] Set up SSL
-- [ ] Add SEO meta tags
-- [ ] Submit to Google Search Console
-- [ ] Test on multiple devices/browsers
-- [ ] **Commit:** `"Production deployment configuration"`
+- [X] Create production build
+- [X] Deploy to Netlify or Vercel
+- [X] Configure custom domain (if available)
+- [X] Set up SSL
+- [X] Add SEO meta tags
+- [X] Submit to Google Search Console
+- [X] Test on multiple devices/browsers
+- [X] **Commit:** `"Production deployment configuration"`
 
 ---
 
-### Phase 10: Backend Integration (Full-Stack Evolution)
+## Phase 10: Full-Stack Backend (Current Focus)
+
 **Goal:** Transform static portfolio into dynamic full-stack application.
 
-- [ ] Add Node.js/Express backend
-- [ ] Implement contact form backend
-- [ ] Create project management API
-- [ ] Add blog section with CMS
-- [ ] Implement user authentication (for admin)
-- [ ] Set up database (PostgreSQL or MongoDB)
-- [ ] Deploy backend separately (Railway, Render, or VPS)
-- [ ] **Commit:** `"Backend integration"`
-- [ ] Email verification (DNS MX check, disposable email blocking)
+- [ ] Create Express server
+- [ ] Set up PostgreSQL database
+- [ ] Build Projects API endpoint
+- [ ] Build Contact form endpoint
 - [ ] Replace Formspree with custom backend
-- [ ] Rate limiting on contact form
-- [ ] Spam protection (honeypot field)
----
+- [ ] Deploy backend to Railway/Render
+- [ ] Connect frontend to backend API
+- [ ] Commit
 
-### Phase 11: Startup Foundation
-**Goal:** Portfolio becomes your startup's digital presence.
-
-- [ ] Add startup landing page section
-- [ ] Integrate student learning resources
-- [ ] Build community features (newsletter, forum link)
-- [ ] Add donation/support options
-- [ ] Create open-source contribution guidelines
-- [ ] Document API for future collaborators
-- [ ] **Commit:** `"Startup foundation layer"`
+**Deferred from earlier phases:**
+- [ ] Email verification (DNS MX check)
+- [ ] Disposable email blocking
+- [ ] Rate limiting
+- [ ] Honeypot spam protection
 
 ---
 
-### Phase 12: Continuous Evolution
-**Goal:** Living portfolio that grows with your career.
+## Phase 11: Blog & Content System
 
-- [ ] Add analytics to track visitor behavior
-- [ ] A/B test different versions
-- [ ] Gather feedback and iterate
-- [ ] Update projects as you build more
-- [ ] Write case studies for significant projects
-- [ ] Add testimonials from collaborators
-- [ ] Keep dependencies updated
-- [ ] Regular content updates
+**Goal:** Demonstrate communication skills and build audience.
 
+- [ ] Add blog section to portfolio
+- [ ] Build markdown-based article system
+- [ ] Create admin panel for writing
+- [ ] Categories: Education, Agriculture, Culture, Open Source
+- [ ] RSS feed
+- [ ] Commit
+
+---
+
+## Phase 12: Real Project Content
+
+**Goal:** Make portfolio job-ready with real content.
+
+- [ ] Write real descriptions for all 6 projects
+- [ ] Add screenshots for each project
+- [ ] Case study format (Problem → Solution → Tech → Results)
+- [ ] Build project detail pages
+- [ ] Commit
+
+---
+
+## Phase 13: Resume & Application Readiness
+
+**Goal:** Ready to apply for jobs.
+
+- [ ] Create professional resume PDF
+- [ ] Write cover letter template
+- [ ] Optimize LinkedIn profile
+- [ ] Polish GitHub profile (pinned repos, bio)
+- [ ] Replace resume placeholder with real PDF
+- [ ] Commit
+
+---
+
+## Phase 14: Advanced Contact Form
+
+**Goal:** Production-grade contact system.
+
+- [ ] Email verification (DNS MX check)
+- [ ] Disposable email blocking
+- [ ] Rate limiting
+- [ ] Honeypot spam protection
+- [ ] Optional CAPTCHA
+- [ ] Commit
+
+---
+
+## Phase 15: Startup Foundation
+
+**Goal:** Begin startup digital presence.
+
+- [ ] Startup landing page (separate from portfolio)
+- [ ] Student learning resources section
+- [ ] Newsletter signup
+- [ ] Open source contribution guidelines
+- [ ] Commit
+
+---
+
+## Phase 16: Analytics & Growth
+
+**Goal:** Track and improve.
+
+- [ ] Add privacy-friendly analytics
+- [ ] Google Search Console
+- [ ] Social sharing optimization
+- [ ] Performance monitoring
+- [ ] Commit
+
+---
+
+## Phase 17: Custom Domain & Branding
+
+**Goal:** Professional identity.
+
+- [ ] Purchase domain
+- [ ] Configure DNS
+- [ ] Professional email
+- [ ] SSL certificate
+- [ ] Update all links
+- [ ] Commit
+
+---
+
+## Phase 18: Advanced Portfolio Features
+
+**Goal:** Stand out from other portfolios.
+
+- [ ] Project case study detail pages
+- [ ] Testimonials section
+- [ ] Speaking/writing section
+- [ ] Theme persistence improvements
+- [ ] Commit
 ---
 
 ## 🔧 Technical Decisions Log
@@ -317,3 +393,4 @@ This roadmap itself is designed as a learning resource. As you progress:
 | 1.1 | 2026-08-11 | Phases 0-2 complete. Theme toggle built. GitHub Pages deployment configured. |
 | 1.2 | 2026-08-13 | Phases 3-4 complete. Skills section with IntersectionObserver. Theme consistency fixes. |
 | 1.3 | 2026-08-16 | Phases 5-6 complete. About section with three pillars. Contact form with Formspree. |
+| 1.4 | 2026-08-20 | Phases 7-9 complete. Added extended roadmap (Phases 10-18). |
